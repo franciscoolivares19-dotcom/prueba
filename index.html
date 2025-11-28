@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: #667eea;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #764ba2;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Una página simple y moderna</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="card" id="inicio">
+            <h2>¡Hola! 👋</h2>
+            <p>Esta es una página web simple creada con HTML y CSS. Incluye estilos modernos con gradientes, efectos de hover y diseño responsivo.</p>
+            <button class="btn">Presiona aquí</button>
+        </div>
+
+        <div class="card" id="acerca">
+            <h2>Características</h2>
+            <p><strong>✨ Diseño moderno:</strong> Colores vibrantes y efectos visuales atractivos.</p>
+            <p><strong>📱 Responsivo:</strong> Se adapta a diferentes tamaños de pantalla.</p>
+            <p><strong>⚡ Rápido:</strong> Solo HTML y CSS, sin dependencias externas.</p>
+        </div>
+
+        <div class="card" id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes preguntas o comentarios, puedes contactarme a través de:</p>
+            <p>Email: contacto@ejemplo.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
